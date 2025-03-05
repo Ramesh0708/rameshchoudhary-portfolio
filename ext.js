@@ -11,6 +11,6 @@ themeToggle.addEventListener('click', () => {
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Form submitted! (This is a demo)');
+    alert('Form submitted!');
     form.reset();
 });
