@@ -7,10 +7,10 @@ themeToggle.addEventListener('click', () => {
     themeToggle.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
 
-// Basic Form Validation (optional)
+// Contact Form Handling
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Form submitted!');
-    form.reset();
+    e.preventDefault(); // Prevent default form submission for now
+    alert('Form submitted! Check Netlify dashboard for data.');
+    form.reset(); // Clear form fields
 });
