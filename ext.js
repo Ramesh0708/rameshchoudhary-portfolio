@@ -1,11 +1,16 @@
-window.addEventListener("scroll", function() {
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky",window.scrollY > 0);
+// Dark Mode Toggle
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    themeToggle.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
 
-function toggleMenu(){
-    var menuToggle = document.querySelector(".toggle");
-    var menu = document.querySelector(".menu");
-    menuToggle.classList.toggle("active");
-    menu.classList.toggle("active");
-}
+// Basic Form Validation (optional)
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Form submitted! (This is a demo)');
+    form.reset();
+});
