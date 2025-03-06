@@ -3,279 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramesh Choudhary</title>
-    <link rel="stylesheet" href="style.css">
-	<link rel = "icon" href = "images/profile-pic.png" type="image/x-icon">
-    <script src="ext.js" language="javascript"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Ramesh Choudhary | Cloud Enthusiast</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body onload="myFunction()">
-   <div id="loading"></div>
-    <!-- Creating Menu Tabs & Logo at Top Using HTML -->
-    <header>
-        <a href="#" class="logo">Portfolio</a>
-        <div class="toggle" onclick="toggleMenu();"></div>
-        <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu();">About</a></li>
-           <li><a href="#work" onclick="toggleMenu();">Projects</a></li>
-	   <li><a href="#certification" onclick="toggleMenu();">Certification</a></li>
-            <li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-        </ul>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Ramesh</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle">🌙</button>
+            </nav>
+        </div>
     </header>
 
-    <!-- Creating Banner Layout in HTML -->
-    <section class="banner" id="home">
-        <div class="textBx">
-            <h2>Hello, I'm<br> <span>Ramesh </span></h2>
-            <h3>I'm a Cloud Enthusiast.</h3>
-            <a href="#about" class="btn">About Me</a>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="fade-in">Hi, I’m Ramesh Choudhary</h1>
+            <p class="fade-in">AWS Certified Cloud Enthusiast</p>
         </div>
     </section>
 
-    <!-- Creating About Me Layout in HTML -->
-    <section class="about" id="about">
-        <div class="heading">
-            <p>Get to Know me</p>
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container fade-in">
             <h2>About Me</h2>
+            <p>Transitioning from technical support to cloud solutions, I’m passionate about AWS and building scalable systems.</p>
         </div>
-        <div class="content">
-            <div class="w50">
-                <img src="images/myPic2.jpg" alt="" class="proPic">
-            </div>
-            <div class="contentBx w50">
-                <h3>Who am i?</h3>
-                <h2>I'm <b>Ramesh Choudhary</b></h2>
-                <p>
-Experienced Associate Technical Support Engineer with a year of hands-on experience in proactive monitoring and client-centric support. Currently dedicated to transitioning my career towards AWS cloud solutions. Holding an AWS Certified Cloud Practitioner certification, I am enthusiastic about leveraging AWS technologies to drive innovation and streamline operations. Eager to contribute to cloud-based environments and expand my expertise within the AWS ecosystem. </p><br>
-                <p>
-</p><br>
-<p> Proficient: ​ AWS Cloud (EC2, S3, IAM, VPC, Lambda, CloudFormation, RDS, Route 53) | Technical Support & Troubleshooting | Proactive Monitoring (Datadog, Jenkins) | SaaS Solutions & Web Applications | SQL & Database Management | CRM (Salesforce Lightning) | Product Support & Client Relations | Shell Scripting & Python </p>
+    </section>
 
-		    
-		    <p> Knowledgeable: ​Linux OS | Cloud Infrastructure & Security | Configuration Management | Social Media Marketing & Digital Promotion | Lead Generation & Event Marketing | Business Analysis </p>
-		    
-                <div class="heading bottom">
-                    <a href="images/resume.docx" class="btn round">Download CV</a>
-                    <div class="bt">
-                        <b>Name:</b> Ramesh Choudhary<br>
-                 <b>Age:</b> 26
-                    </div>
-                    <div class="bt">
-                        <b>Email:</b> rameshchoudhary8675@gmail.com<br>
-                <b>Location:</b> Pune,Maharashtra, India
-                    </div>
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="container fade-in">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <span class="skill">AWS</span>
+                <span class="skill">Java</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Firebase</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="container fade-in">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>ExpenseTrack</h3>
+                    <p>A web app to manage expenses.</p>
+                    <a href="https://github.com/Ramesh0708/ExpenseTrack" class="btn">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Shopping-List-App</h3>
+                    <p>A mobile app for shopping lists.</p>
+                    <a href="https://github.com/Ramesh0708/Shopping-List-App" class="btn">View on GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 
-    
-
-    <!-- Creating Work Layout in HTML -->
-
-    <section class="work" id="work">
-        <div class="heading">
-            <h2>My  Latest Project</h2>
-            <p>Showcasing some of my <b>Project</b></p>
-        </div>
-        <div class="content">
-            <div class="workBx">
-                <a href="https://www.linkedin.com/posts/ramesh-choudhary07_cloud-aws-project-activity-7020736822687207424-_g1Z?utm_source=share&utm_medium=member_desktop"target="_blank">
-                    <img src="images/serverless.png" alt="">
-                    <p>Serverless Sending Application</p>
-                </a>
-            </div>
-	   <div class="workBx">
-                <a href="https://github.com/Ramesh0708/MyChatApp"target="_blank">
-                    <img src="images/MyChatApp.jpg" alt="">
-                    <p>Group-Chat App</p>
-                </a>
-            </div>
-            <div class="workBx">
-                <a href="https://github.com/Ramesh0708/ExpenseTrack"target="_blank">
-                    <img src="images/ExpenseTrack.jpg" alt="">
-                    <p>Expense Track App</p>
-                </a>
-            </div>
-            <div class="workBx">
-                <a href="https://github.com/Ramesh0708/Shopping-List-App"target="_blank">
-                    <img src="images/shoppinglist.jpg" alt="">
-                    <p>Shopping List App</p>
-                </a>
-            </div>
-            <div class="workBx">
-                <a href="https://github.com/Ramesh0708/FaceDetection"target="_blank">
-                    <img src="images/FaceDetection.jpg" alt="">
-                    <p>Face Detection App</p>
-                </a>
-            </div>
-            <div class="workBx">
-                <a href="https://github.com/Ramesh0708/WhatsappStockmarketBot"target="_blank">
-                    <img src="images/chatbot.jpg" alt="">
-                    <p>WhatsappStockmarketBot</p>
-                </a>
-            </div>
-            
-            <div class="heading">
-                <a href="https://github.com/Ramesh0708" class="btn" style="color:#fff;">View All MyProject</a>
-            </div>
-        </div>
-    </section>
-										       
-  <!-- Creating Certification Layout in HTML -->
-
-    <section class="work" id="certification">
-        <div class="heading">
-            <h1>My Certification </h1>
-            <p>Showcasing some of my <b>Certification</b></p>
-        </div>
-        <div class="content">
-            <div class="workBx">
-                <a href="https://www.credly.com/badges/bac63b06-68e0-409c-addf-57d3ddb4c024/public_url"target="_blank">
-                    <img src="images/cloudfoundational.png" alt="">
-                    <p>AWS Certified Cloud Practitioner</p>
-                </a>
-            </div>
-		
-		<div class="workBx">
-                <a href="https://www.credential.net/994009b4-9171-4f8c-b3ed-c2baedef5f2e"target="_blank">
-                    <img src="images/upgrad.jpg" alt="">
-                    <p>StartUp India Learning Program </p>
-                </a>
-            </div>
-
-		<div class="workBx">
-                <a href="https://www.credly.com/badges/f1dbd20d-168f-4d26-9e36-2943b7c283ef/public_url"target="_blank">
-                    <img src="images/effective-chatgpt-prompts.png" alt="">
-                    <p> Writing Effective Prompts for ChatGPT </p>
-                </a>
-            </div>
-           
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container fade-in">
+            <h2>Contact Me</h2>
+            <form action="mailto:rameshchoudhary0708@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
         </div>
     </section>
 
-    <!-- Creating Testimonial Layout in HTML -->
-    <section class="testimonial" id="testimonial">
-        <div class="heading white">
-            <h2>Testimonial</h2>
-            <p>What my Folks think about me</p>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ramesh Choudhary</p>
         </div>
-        <div class="content">
-            <div class="testimonialBx">
-                <p> I'm confident that anyone who visits will be just as amazed as I am </p>
-                <h3> Rajas zende <br> Student at National College of Ireland  </h3>
-            </div>
-		<div class="testimonialBx">
-                <p> Wow, I'm blown away by your portfolio website! As your friend, I always knew you had talent, but seeing your work displayed so beautifully online is a whole new level of impressive </p>
-                <h3> TEJAS PATRIKAR <br> Revenue Analyst at ZS  </h3>
-            </div>
-		<div class="testimonialBx">
-                <p> Your portfolio website is a true reflection of your skills and achievements, and I have no doubt it will open up countless opportunities for you. Keep up the fantastic work, my friend! </p>
-                <h3> Vinay Machave <br> Technical Support Representative at NTT Ltd </h3>
-            </div>
-            <div class="testimonialBx">
-                <p>Your portfolio website is top-notch! It effortlessly highlights your skills and accomplishments. A true reflection of your expertise </p><h3> Shubham Akhil <br> Cloud Operation Engineer at Uniphore </h3>
-            </div>
-        </div>
-    </section>
+    </footer>
 
-    <!-- Creating Contact Layout in HTML -->
-    <section class="contact" id="contact">
-        <div class="heading white">
-            <p>Feel free to contact me anytime</p>
-            <h2>Get in Touch</h2>
-        </div>
-        <div class="content">
-            <div class="contactInfo">
-                <h3>Contact Info</h3>
-                <p><br>Feel free to contact me!</p>
-                <div class="contactInfoBx">
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Address</h3>
-                            <p> Pune, Maharashtra <br>India</p>
-                        </div>
-                    </div>
-                    
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-envelope-o"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Email Address</h3>
-                            <p>rameshchoudhary8675@gmail.com</p>
-                        </div>
-                    </div>
-                    <br>
-                    <h3>Social Connect</h3>
-                    <div class="boxSocial">
-                        
-                        <div class="icon">
-                            <a href="https://twitter.com/hiranandaniguy" target="_blank">
-                                <i class="fa fa-twitter-square"></i>
-                            </a>
-                        </div>
-                        <div class="icon">
-                            <a href="https://www.linkedin.com/in/ramesh-choudhary07/" target="_blank">
-                                <i class="fa fa-linkedin-square"></i>
-                            </a>
-                        </div>
-			    
-			    <div class="icon">
-                            <a href="https://github.com/Ramesh0708" target="_blank">
-                                <i class="fa fa-github"></i>
-                            </a>
-                        </div>
-			    
-			     <div class="icon">
-                            <a href="https://www.buymeacoffee.com/rameshchoudhary" target="_blank">
-                                <i class="fa fa-coffee"></i>
-                            </a>
-                        </div>
-			    
-                    </div>
-                </div>
-            </div>
-            <div class="formBx">
-                <form name="contact" method="POST" data-netlify="true">
-                    <h3>Message Me</h3>
-                    <input type="text" placeholder="Full Name" name="text">
-                    <input type="email" placeholder="Email" name="email">
-                    <textarea name="message" rows="6" id="" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send Message" name="message">
-                </form>
-                                                                     
-            </div>
-                                                                     
-        </div>
-         
-    </section>
-
-    <!-- Creating Footer Layout in HTML -->
-    <footer class="copyright">
-                            
-        <p>&copy; 2023, rameshchoudhary, Allrights reserved</p>  <p class="float-left">
-      <a href="#">
-        Back to top
-      </a>  
-    </p>
-    </footer>  
-	
-
-         <script>
-		var preloader = document.getElementById("loading");
-		function myFunction(){
-			preloader.style.display = 'none';
-		};
-	</script>
-	
-			<script id="BotPenguin-messenger-widget" src="https://cdn.botpenguin.com/botpenguin.js" defer>63d5ff3b8e9344057dca2905,63d5fdb137e5013fed8cae45</script>
-
-	</body>
-	
+    <script src="ext.js"></script>
+</body>
 </html>
