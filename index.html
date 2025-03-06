@@ -3,47 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramesh Choudhary | AWS Cloud Enthusiast</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Ramesh Choudhary</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 font-sans text-gray-800">
-    <!-- Navbar -->
-    <header class="fixed top-0 w-full bg-white shadow-md z-10">
-        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-            <a href="#" class="text-xl font-bold text-blue-600">Ramesh</a>
-            <button id="theme-toggle" class="p-2 rounded-full bg-gray-200">🌙</button>
-        </nav>
+<body>
+    <header>
+        <button id="theme-toggle">🌙</button>
     </header>
 
-    <!-- Hero -->
-    <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-        <div class="text-center">
-            <h1 class="text-4xl font-bold mb-4">Hi, I’m Ramesh Choudhary</h1>
-            <p class="text-lg mb-6">AWS Certified Cloud Enthusiast</p>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-6 text-center">Contact Me</h2>
-            <form id="contact-form" name="contact" method="POST" data-netlify="true" class="max-w-lg mx-auto">
-                <input type="hidden" name="form-name" value="contact">
-                <input type="text" name="name" placeholder="Name" class="w-full p-3 mb-4 border rounded-lg" required>
-                <input type="email" name="email" placeholder="Email" class="w-full p-3 mb-4 border rounded-lg" required>
-                <textarea name="message" placeholder="Message" class="w-full p-3 mb-4 border rounded-lg" rows="4" required></textarea>
-                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Send</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto text-center">
-            <p>© 2025 Ramesh Choudhary</p>
-        </div>
-    </footer>
+    <main>
+        <h1>Hello, I’m Ramesh</h1>
+        <form id="contact-form" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <button type="submit">Send</button>
+        </form>
+    </main>
 
     <script src="ext.js"></script>
 </body>
