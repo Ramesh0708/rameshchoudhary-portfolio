@@ -1,16 +1,46 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+}
+
+#theme-toggle {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 60px;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, button {
+    padding: 8px;
+}
+
 body.dark-mode {
-    background-color: #1a202c;
-    color: #e2e8f0;
+    background-color: #333;
+    color: #fff;
 }
 
 body.dark-mode header {
-    background-color: #2d3748;
-}
-
-body.dark-mode #contact {
-    background-color: #4a5568;
-}
-
-.transition {
-    transition: all 0.3s ease;
+    background: #444;
 }
