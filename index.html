@@ -1,305 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramesh Choudhary</title>
-    <link rel="stylesheet" href="style.css">
-	<link rel = "icon" href = "images/profile-pic.png" type="image/x-icon">
-    <script src="ext.js" language="javascript"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramesh Choudhary — SaaS & AWS Technical Support</title>
+  <meta name="description" content="Senior Associate Technical Support Engineer at IDeaS Revenue Solutions. AWS and Google Cloud certified. Volunteer with AWS User Group Pune.">
+  <meta name="theme-color" content="#0e0f0c">
+  <link rel="icon" href="images/profile-pic.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body onload="myFunction()">
-   <div id="loading"></div>
-    <!-- Creating Menu Tabs & Logo at Top Using HTML -->
-    <header>
-        <a href="#" class="logo">Portfolio</a>
-        <div class="toggle" onclick="toggleMenu();"></div>
-        <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu();">About</a></li>
-           <li><a href="#work" onclick="toggleMenu();">Projects</a></li>
-	   <li><a href="#certification" onclick="toggleMenu();">Certification</a></li>
-            <li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-        </ul>
-    </header>
+<body>
+  <a class="skip" href="#home">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="#home">RC<span>.</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Creating Banner Layout in HTML -->
-    <section class="banner" id="home">
-        <div class="textBx">
-            <h2>Hello, I'm<br> <span>Ramesh </span></h2>
-            <h3>I'm a Cloud Enthusiast.</h3>
-            <a href="#about" class="btn">About Me</a>
+  <main>
+    <section class="wrap hero" id="home">
+      <div>
+        <p class="kicker">Available for cloud-minded conversations</p>
+        <h1>Ramesh Choudhary</h1>
+        <p class="lede">Senior Associate Technical Support Engineer at IDeaS Revenue Solutions. I keep SaaS products reliable for global clients, and I keep learning cloud, observability, and practical AI in public.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn ghost" href="images/resume.docx">Download CV</a>
         </div>
+        <div class="meta-row">
+          <span>Pune, India</span>
+          <span>AWS Certified · Google ACE</span>
+          <span>Volunteer @ AWS User Group Pune</span>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="images/profile-pic.png" alt="Portrait of Ramesh Choudhary in a suit">
+      </div>
     </section>
 
-    <!-- Creating About Me Layout in HTML -->
-    <section class="about" id="about">
-        <div class="heading">
-            <p>Get to Know me</p>
-            <h2>About Me</h2>
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>Support first. Cloud next. Community always.</p>
         </div>
-        <div class="content">
-            <div class="w50">
-                <img src="images/myPic2.jpg" alt="" class="proPic">
-            </div>
-            <div class="contentBx w50">
-                <h3>Who am i?</h3>
-                <h2>I'm <b>Ramesh Choudhary</b></h2>
-                <p>
-I’m a detail-oriented Technical Support Engineer with hands-on experience in SaaS application support, customer success, and a growing focus on cloud computing. At IDeaS Revenue Solutions, I provide end-to-end product support to global clients, troubleshooting application and integration issues, analyzing logs, and collaborating with engineering teams to ensure system stability and client satisfaction.
-
-I’m an AWS Certified Cloud Practitioner and an AWS re/Start graduate, with practical exposure to EC2, S3, IAM, and networking fundamentals. My goal is to continuously bridge my support experience with cloud technologies helping businesses maintain reliable, scalable, and high-performing environments.
-
-Outside of work, I volunteer with the AWS User Group Pune, where I contribute to community events and knowledge-sharing sessions. I’m passionate about continuous learning, automation, and delivering solutions that make an impact.  <p>
-</p><br>
-<p> Proficient: ​ AWS Cloud (EC2, S3, IAM, VPC, Lambda, CloudFormation, RDS, Route 53) | Technical Support & Troubleshooting | Proactive Monitoring (Datadog, Jenkins) | SaaS Solutions & Web Applications | SQL & Database Management | CRM (Salesforce Lightning) | Product Support & Client Relations | Shell Scripting & Python </p>
-
-		    
-		    <p> Knowledgeable: ​Linux OS | Cloud Infrastructure & Security | Configuration Management | Social Media Marketing & Digital Promotion | Lead Generation & Event Marketing | Business Analysis </p>
-		    
-                <div class="heading bottom">
-                    <a href="images/resume.docx" class="btn round">Download CV</a>
-                    <div class="bt">
-                        <b>Name:</b> Ramesh Choudhary<br>
-                 <b>Age:</b> 26
-                    </div>
-                    <div class="bt">
-                        <b>Email:</b> rameshchoudhary8675@gmail.com<br>
-                <b>Location:</b> Pune,Maharashtra, India
-                    </div>
-                </div>
-            </div>
+        <div class="about-grid">
+          <div class="prose">
+            <p>I’m a detail-oriented technical support engineer with hands-on experience in SaaS product support and a growing practice in AWS and Google Cloud. At IDeaS Revenue Solutions I help global hospitality clients get unstuck: installations, process monitoring, application and integration issues, and the unglamorous work of reading logs until the system is stable again.</p>
+            <p>I’m an AWS re/Start graduate, an AWS Certified Cloud Practitioner and AI Practitioner, and a Google Associate Cloud Engineer. Day to day that looks like bridging customer problems with cloud fundamentals — EC2, S3, IAM, VPC, and the operational habits that keep environments predictable.</p>
+            <p>Outside work I volunteer with AWS User Group Pune and show up for Pune’s builder rooms: Datadog Live, OpenSearch, Cloud Native, and hands-on AI build days. In 2026 I also ran an internal AI agents workshop during AI Week at IDeaS and took first place in our AI &amp; Automation initiative.</p>
+          </div>
+          <div class="skill-groups">
+            <article class="skill-card">
+              <h3>Cloud</h3>
+              <div class="chips">
+                <span>AWS EC2 / S3 / IAM</span>
+                <span>VPC / Lambda</span>
+                <span>CloudFormation</span>
+                <span>RDS / Route 53</span>
+                <span>Google Cloud</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Support &amp; ops</h3>
+              <div class="chips">
+                <span>SaaS troubleshooting</span>
+                <span>Datadog</span>
+                <span>SQL</span>
+                <span>Salesforce Lightning</span>
+                <span>Linux</span>
+                <span>Python / Shell</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Currently exploring</h3>
+              <div class="chips">
+                <span>AI agents</span>
+                <span>RAG / embeddings</span>
+                <span>LLM observability</span>
+                <span>Power Automate</span>
+              </div>
+            </article>
+          </div>
         </div>
+      </div>
     </section>
 
-    
-
-    <!-- Creating Work Layout in HTML -->
-
-    <section class="work" id="work">
-        <div class="heading">
-            <h2>My  Latest Project</h2>
-            <p>Showcasing some of my <b>Project</b></p>
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p>IDeaS since 2023. Cloud apprenticeship before that. Campus marketing internships stayed off this page on purpose.</p>
         </div>
-        <div class="content">
-            <div class="workBx">
-                <a href="https://www.linkedin.com/posts/ramesh-choudhary07_cloud-aws-project-activity-7020736822687207424-_g1Z?utm_source=share&utm_medium=member_desktop"target="_blank">
-                    <img src="images/serverless.png" alt="">
-                    <p>Serverless Sending Application</p>
-                </a>
+        <div class="timeline">
+          <article class="job">
+            <time datetime="2025-03">Mar 2025 — Present</time>
+            <div>
+              <h3>Senior Associate Technical Support Engineer (SaaS &amp; AWS)</h3>
+              <p class="org">IDeaS Revenue Solutions · Pune</p>
+              <ul>
+                <li>Monitor production processes and handle installation work for the IDeaS client base.</li>
+                <li>Resolve issues raised by internal and external clients, with an eye on time-to-resolution.</li>
+                <li>Work across product teams under pressure without losing the details that actually fix the ticket.</li>
+              </ul>
             </div>
-	   <div class="workBx">
-                <a href="https://github.com/Ramesh0708/MyChatApp"target="_blank">
-                    <img src="images/MyChatApp.jpg" alt="">
-                    <p>Group-Chat App</p>
-                </a>
+          </article>
+          <article class="job">
+            <time datetime="2023-04">Apr 2023 — Mar 2025</time>
+            <div>
+              <h3>Associate Technical Support Engineer (SaaS &amp; AWS)</h3>
+              <p class="org">IDeaS Revenue Solutions · Pune</p>
+              <ul>
+                <li>Same core loop: proactive monitoring, reactive support, and cross-functional follow-through on hospitality revenue-management products.</li>
+                <li>Built the client-facing instincts I still use — clear communication, log-driven debugging, and knowing when to escalate.</li>
+              </ul>
             </div>
-            <div class="workBx">
-                <a href="https://github.com/Ramesh0708/ExpenseTrack"target="_blank">
-                    <img src="images/ExpenseTrack.jpg" alt="">
-                    <p>Expense Track App</p>
-                </a>
+          </article>
+          <article class="job">
+            <time datetime="2022-09">Sep 2022 — Dec 2022</time>
+            <div>
+              <h3>AWS Cloud Apprentice</h3>
+              <p class="org">Vinsys · AWS re/Start · Pune</p>
+              <ul>
+                <li>12-week full-time program covering IT fundamentals, Linux, Python/Shell, and core AWS compute, storage, and networking.</li>
+                <li>Recognized as an Exceptional Student (Oct 2023) for performance and placement out of the apprenticeship.</li>
+              </ul>
             </div>
-            <div class="workBx">
-                <a href="https://github.com/Ramesh0708/Shopping-List-App"target="_blank">
-                    <img src="images/shoppinglist.jpg" alt="">
-                    <p>Shopping List App</p>
-                </a>
+          </article>
+          <article class="job">
+            <time>Education</time>
+            <div>
+              <h3>B.Tech, Information Technology</h3>
+              <p class="org">Ajeenkya DY Patil University</p>
+              <ul>
+                <li>AWS re/Start Program Learner, Amazon Web Services — workforce training that connected classroom cloud skills to an employer path.</li>
+              </ul>
             </div>
-            <div class="workBx">
-                <a href="https://github.com/Ramesh0708/FaceDetection"target="_blank">
-                    <img src="images/FaceDetection.jpg" alt="">
-                    <p>Face Detection App</p>
-                </a>
-            </div>
-            <div class="workBx">
-                <a href="https://github.com/Ramesh0708/WhatsappStockmarketBot"target="_blank">
-                    <img src="images/chatbot.jpg" alt="">
-                    <p>WhatsappStockmarketBot</p>
-                </a>
-            </div>
-            
-            <div class="heading">
-                <a href="https://github.com/Ramesh0708" class="btn" style="color:#fff;">View All MyProject</a>
-            </div>
+          </article>
         </div>
-    </section>
-										       
-  <!-- Creating Certification Layout in HTML -->
-
-    <section class="work" id="certification">
-        <div class="heading">
-            <h1>My Certification </h1>
-            <p>Showcasing some of my <b>Certification</b></p>
-        </div>
-        <div class="content">
-            <div class="workBx">
-                <a href="https://www.credly.com/badges/bac63b06-68e0-409c-addf-57d3ddb4c024/public_url"target="_blank">
-                    <img src="images/cloudfoundational.png" alt="">
-                    <p>AWS Certified Cloud Practitioner</p>
-                </a>
-            </div>
-
-		<div class="workBx">
-                <a href="https://www.credly.com/badges/8e72da80-6903-49d8-8313-97a2ca5378ed/public_url"target="_blank">
-                    <img src="images/aws-cloud-quest-cloud-practitioner.png" alt="">
-                    <p>AWS Cloud Quest: Cloud Practitioner</p>
-                </a>
-            </div>
-			<div class="workBx">
-                <a href="https://www.credly.com/badges/f03a4b7a-823c-4e33-a0e9-24988cd0062b/public_url"target="_blank">
-                    <img src="images/AI Practitioner Badge.png" alt="">
-                    <p>AWS Certified AI Practitioner</p>
-                </a>
-            </div>
-
-			<div class="workBx">
-                <a href="https://www.credential.net/994009b4-9171-4f8c-b3ed-c2baedef5f2e"target="_blank">
-                    <img src="images/upgrad.jpg" alt="">
-                    <p>StartUp India Learning Program </p>
-                </a>
-            </div>
-			
-		
-		<div class="workBx">
-                <a href="https://www.credly.com/badges/d39641f0-548e-4de5-87f8-5eef79b9b418/whatsapp"target="_blank">
-                    <img src="images/GCP_ACE.jpeg" alt="">
-                    <p> Associate Cloud Engineer Certification </p>
-                </a>
-            </div>
-
-		<div class="workBx">
-                <a href="https://www.credly.com/badges/f1dbd20d-168f-4d26-9e36-2943b7c283ef/public_url"target="_blank">
-                    <img src="images/effective-chatgpt-prompts.png" alt="">
-                    <p> Writing Effective Prompts for ChatGPT </p>
-                </a>
-            </div>
-           
-        </div>
+      </div>
     </section>
 
-    <!-- Creating Testimonial Layout in HTML -->
-    <section class="testimonial" id="testimonial">
-        <div class="heading white">
-            <h2>Testimonial</h2>
-            <p>What my Folks think about me</p>
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <p>Things people can actually use. Old college Android demos are not here.</p>
         </div>
-        <div class="content">
-            <div class="testimonialBx">
-                <p> I'm confident that anyone who visits will be just as amazed as I am </p>
-                <h3> Rajas zende <br> Student at National College of Ireland  </h3>
-            </div>
-		<div class="testimonialBx">
-                <p> Wow, I'm blown away by your portfolio website! As your friend, I always knew you had talent, but seeing your work displayed so beautifully online is a whole new level of impressive </p>
-                <h3> TEJAS PATRIKAR <br> Revenue Analyst at ZS  </h3>
-            </div>
-		<div class="testimonialBx">
-                <p> Your portfolio website is a true reflection of your skills and achievements, and I have no doubt it will open up countless opportunities for you. Keep up the fantastic work, my friend! </p>
-                <h3> Vinay Machave <br> Technical Support Representative at NTT Ltd </h3>
-            </div>
-            <div class="testimonialBx">
-                <p>Your portfolio website is top-notch! It effortlessly highlights your skills and accomplishments. A true reflection of your expertise </p><h3> Shubham Akhil <br> Cloud Operation Engineer at Uniphore </h3>
-            </div>
+        <div class="project-grid">
+          <a class="card" href="https://github.com/Ramesh0708/appraisalfuncalculator" target="_blank" rel="noopener noreferrer">
+            <span class="tag">Product · 2025–2026</span>
+            <h3>Night Shift &amp; Salary Toolkit</h3>
+            <p>Privacy-first calculators for night-shift allowance, appraisal impact, and take-home pay. About 150 people tried the first version; I’m rebuilding it as Salary Copilot AI with tax-aware insights.</p>
+            <span class="more">View on GitHub →</span>
+          </a>
+          <a class="card" href="https://arthya.netlify.app" target="_blank" rel="noopener noreferrer">
+            <span class="tag">Product</span>
+            <h3>Arthya</h3>
+            <p>A small fintech experiment to surface hidden credit and debit card benefits in one place so people stop missing the perks they already pay for.</p>
+            <span class="more">Open live site →</span>
+          </a>
+          <a class="card" href="https://github.com/Ramesh0708/trafficbot-pro" target="_blank" rel="noopener noreferrer">
+            <span class="tag">Automation</span>
+            <h3>Traffic Bot Pro</h3>
+            <p>GitHub Actions pipeline that posts Pune traffic updates into Microsoft Teams. Practical ops: scheduled jobs, alerts, less tab-switching.</p>
+            <span class="more">View repository →</span>
+          </a>
+          <a class="card" href="https://www.linkedin.com/posts/ramesh-choudhary-cloud_cloud-aws-project-activity-7020736822687207424-_g1Z" target="_blank" rel="noopener noreferrer">
+            <span class="tag">AWS</span>
+            <h3>Serverless sending app</h3>
+            <p>A cloud project using core AWS services to send messages without managing servers — the kind of lab work that made re/Start stick.</p>
+            <span class="more">Read the write-up →</span>
+          </a>
         </div>
+      </div>
     </section>
 
-    <!-- Creating Contact Layout in HTML -->
-    <section class="contact" id="contact">
-        <div class="heading white">
-            <p>Feel free to contact me anytime</p>
-            <h2>Get in Touch</h2>
+    <section id="certs">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Certifications</h2>
+          <p>Vendor credentials that are current. Short LinkedIn Learning badges did not make the cut.</p>
         </div>
-        <div class="content">
-            <div class="contactInfo">
-                <h3>Contact Info</h3>
-                <p><br>Feel free to contact me!</p>
-                <div class="contactInfoBx">
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Address</h3>
-                            <p> Pune, Maharashtra <br>India</p>
-                        </div>
-                    </div>
-                    
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-envelope-o"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Email Address</h3>
-                            <p>rameshchoudhary8675@gmail.com</p>
-                        </div>
-                    </div>
-                    <br>
-                    <h3>Social Connect</h3>
-                    <div class="boxSocial">
-                        
-                        <div class="icon">
-                            <a href="https://twitter.com/hiranandaniguy" target="_blank">
-                                <i class="fa fa-twitter-square"></i>
-                            </a>
-                        </div>
-                        <div class="icon">
-                            <a href="https://www.linkedin.com/in/ramesh-choudhary07/" target="_blank">
-                                <i class="fa fa-linkedin-square"></i>
-                            </a>
-                        </div>
-			    
-			    <div class="icon">
-                            <a href="https://github.com/Ramesh0708" target="_blank">
-                                <i class="fa fa-github"></i>
-                            </a>
-                        </div>
-			    
-			     <div class="icon">
-                            <a href="https://www.buymeacoffee.com/rameshchoudhary" target="_blank">
-                                <i class="fa fa-coffee"></i>
-                            </a>
-                        </div>
-			    
-                    </div>
-                </div>
+        <div class="cert-grid">
+          <a class="cert" href="https://www.credly.com/badges/376b8720-2b5d-4bdc-8f10-27ebec9b9b57/public_url" target="_blank" rel="noopener noreferrer">
+            <img src="images/cloudfoundational.png" alt="">
+            <div>
+              <h3>AWS Certified Cloud Practitioner</h3>
+              <p>Issued Dec 2022 · valid through Dec 2028</p>
             </div>
-            <div class="formBx">
-                <form name="contact" method="POST" data-netlify="true">
-                    <h3>Message Me</h3>
-                    <input type="text" placeholder="Full Name" name="text">
-                    <input type="email" placeholder="Email" name="email">
-                    <textarea name="message" rows="6" id="" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send Message" name="message">
-                </form>
-                                                                     
+          </a>
+          <a class="cert" href="https://www.credly.com/badges/f03a4b7a-823c-4e33-a0e9-24988cd0062b/public_url" target="_blank" rel="noopener noreferrer">
+            <img src="images/AI Practitioner Badge.png" alt="">
+            <div>
+              <h3>AWS Certified AI Practitioner</h3>
+              <p>Issued Jan 2026 · valid through Jan 2029</p>
             </div>
-                                                                     
+          </a>
+          <a class="cert" href="https://www.credly.com/badges/d39641f0-548e-4de5-87f8-5eef79b9b418/public_url" target="_blank" rel="noopener noreferrer">
+            <img src="images/GCP_ACE.jpeg" alt="Google Associate Cloud Engineer badge">
+            <div>
+              <h3>Google Associate Cloud Engineer</h3>
+              <p>Issued Feb 2026 · valid through Feb 2029</p>
+            </div>
+          </a>
+          <a class="cert" href="https://www.credly.com/badges/8e72da80-6903-49d8-8313-97a2ca5378ed/public_url" target="_blank" rel="noopener noreferrer">
+            <img src="images/aws-cloud-quest-cloud-practitioner.png" alt="">
+            <div>
+              <h3>AWS Cloud Quest: Cloud Practitioner</h3>
+              <p>Hands-on AWS learning badge</p>
+            </div>
+          </a>
         </div>
-         
+      </div>
     </section>
 
-    <!-- Creating Footer Layout in HTML -->
-    <footer class="copyright">
-                            
-        <p>&copy; 2023, rameshchoudhary, Allrights reserved</p>  <p class="float-left">
-      <a href="#">
-        Back to top
-      </a>  
-    </p>
-    </footer>  
-	
+    <section id="community">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Community &amp; highlights</h2>
+          <p>The rooms I actually show up in — not a list of every meetup photo.</p>
+        </div>
+        <div class="highlights">
+          <div class="stat">
+            <strong>1st</strong>
+            <span>IDeaS AI &amp; Automation initiative, 2026</span>
+          </div>
+          <div class="stat">
+            <strong>30</strong>
+            <span>People in the AI agents workshop I co-ran at YantraX</span>
+          </div>
+          <div class="stat">
+            <strong>20k+</strong>
+            <span>AWS User Group Pune members — I volunteer at the meetups</span>
+          </div>
+        </div>
+        <div class="community-grid">
+          <article class="card">
+            <span class="tag">Volunteer</span>
+            <h3>AWS User Group Pune</h3>
+            <p>Help run meetups, greet new volunteers, and share how I got into the community. Recent sessions covered production automation and securing agents on AWS.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Teaching</span>
+            <h3>AI Week · YantraX</h3>
+            <p>Hands-on workshop on building agents with SLMs/LLMs. Live demos broke on my laptop and still taught the useful lesson: troubleshoot in public, keep going.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Events</span>
+            <h3>2026 circuit</h3>
+            <p>AWS Summit Mumbai, Datadog Live Pune, OpenSearch User Group, Build Club × Mem0, Gemma 4 at Google Pune. I go to learn and to help at the door.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Culture</span>
+            <h3>Team Sankalp · CSR</h3>
+            <p>Helped organize IDeaS’ 21st blood donation drive with Manipal Hospitals. The work is not cloud. It is still part of how I show up.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-         <script>
-		var preloader = document.getElementById("loading");
-		function myFunction(){
-			preloader.style.display = 'none';
-		};
-	</script>
-	
-			<script id="BotPenguin-messenger-widget" src="https://cdn.botpenguin.com/botpenguin.js" defer>63d5ff3b8e9344057dca2905,63d5fdb137e5013fed8cae45</script>
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-copy">
+          <p class="kicker">Contact</p>
+          <h2>Say hello</h2>
+          <p>Best for cloud, SaaS support, community collabs, or a coffee in Pune.</p>
+          <p><a href="mailto:rameshchoudhary8675@gmail.com">rameshchoudhary8675@gmail.com</a></p>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/ramesh-choudhary-cloud/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/Ramesh0708" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://twitter.com/hiranandaniguy" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="https://www.buymeacoffee.com/rameshchoudhary" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
+          </div>
+        </div>
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <div>
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email">
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-	</body>
-	
+  <footer class="wrap site-footer">
+    <p>© <span data-year>2026</span> Ramesh Choudhary</p>
+    <a href="#home">Back to top</a>
+  </footer>
+  <script src="ext.js"></script>
+</body>
 </html>

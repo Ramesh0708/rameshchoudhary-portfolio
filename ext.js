@@ -1,11 +1,31 @@
-window.addEventListener("scroll", function() {
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky",window.scrollY > 0);
-});
+const header = document.querySelector(".site-header");
+const toggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector("#site-nav");
 
-function toggleMenu(){
-    var menuToggle = document.querySelector(".toggle");
-    var menu = document.querySelector(".menu");
-    menuToggle.classList.toggle("active");
-    menu.classList.toggle("active");
+function setSticky() {
+  if (!header) return;
+  header.classList.toggle("is-scrolled", window.scrollY > 12);
 }
+
+window.addEventListener("scroll", setSticky, { passive: true });
+setSticky();
+
+if (toggle && nav) {
+  toggle.addEventListener("click", () => {
+    const open = nav.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(open));
+    document.body.classList.toggle("nav-open", open);
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("nav-open");
+    });
+  });
+}
+
+document.querySelectorAll("[data-year]").forEach((el) => {
+  el.textContent = String(new Date().getFullYear());
+});
